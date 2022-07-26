@@ -1,5 +1,7 @@
 const express=require('express');
 const app=express();
+require('dotenv').config()
+const port = process.env.PORT || 3003;
 
 const mood=['angry','sad','hungry','happy'];
 
@@ -86,10 +88,10 @@ app.get('/mood/:moodIndx',(req,res)=>{
 
 //10 http://localhost:3000/Larissa
 app.get('/:name',(req,res)=>{
-    res.send('Hello'+req.params.name)
+    res.send('Hello '+req.params.name)
 });
 
 
-app.listen(3000,function(){
-    console.log('Listening on port 3000');
-  });
+app.listen(port,() => {
+    console.log('Listening on port' , port);
+});
