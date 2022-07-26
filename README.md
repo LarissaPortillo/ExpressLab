@@ -5,7 +5,7 @@ $ git clone https://github.com/yourusername/repositoryname
 ```
 Go to the project directory
 ```
-$ cd repositoryname/Mancala
+$ cd repositoryname
 ```
 
 Install express package
